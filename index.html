@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Konstei — Projects</title>
+    <meta name="description" content="Project portfolio page" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">K</div>
+                <div>
+                    <h1>Konstei</h1>
+                    <div style="color:var(--muted);font-size:13px">Projects</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <div class="hero" id="controls">
+            <div class="hero-header">
+                <strong>Filter and explore projects</strong>
+                <div class="controls">
+                    <input id="search" class="search" placeholder="Search projects..." />
+                </div>
+            </div>
+            <div class="tags" id="tagList">
+                <!-- tags inserted by JS -->
+            </div>
+        </div>
+        
+        <main id="projects">
+            <div class="grid" id="grid">
+                <!-- project cards inserted by JS -->
+            </div>
+        </main>
+
+        <footer>
+            Built with plain HTML/CSS/JS — exportable static portfolio
+        </footer>
+    </div>
+
+    <div class="modal" id="modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+                <strong id="modalTitle"></strong>
+                <button class="close" id="modalClose">Close ✕</button>
+            </div>
+            <div id="modalBody" style="color:var(--muted);line-height:1.5"></div>
+        </div>
+    </div>
+</body>
+</html>
